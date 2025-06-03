@@ -1,0 +1,72 @@
+﻿@model VaccinationApp.Models.VaccinationCenter
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VaccinationCenter</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxCapacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxCapacity)
+        </dd>
+
+    </dl>
+</div>
+
+@foreach (var item in Model.Vaccines)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.)
+            @Html.DisplayFor( => item.)
+            
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Patient.LastName)
+        </td>
+        <td>
+            <img src="@Html.DisplayFor(modelItem => item.Patient.ImageUrl)" alt="Alternate Text" />
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patient.PhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patient.Email)
+        </td>
+        
+    </tr>
+}
+
+
+
+@Html.ActionLink("Dodadi Pacient", "CreateVaccine")
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

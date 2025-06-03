@@ -1,0 +1,58 @@
+﻿@model VaccinationApp.Models.Vaccine
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vaccine</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.Embg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.Embg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VaccinationCenter.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VaccinationCenter.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manufacturer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Certificate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Certificate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTaken)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTaken)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
