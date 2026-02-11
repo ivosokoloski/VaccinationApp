@@ -1,45 +1,45 @@
 # Vaccination App
 
-**Vaccination App** е **mini апликација развиена со ASP.NET MVC**, наменета за изучување на **основните концепти на MVC архитектурата во .NET околина**.
+**Vaccination App** is a **mini application developed with ASP.NET MVC**, intended for studying the **basic concepts of the MVC architecture in a .NET environment**.
 
-## 📌 Опис
+## 📌 Description
 
-Апликацијата служи како **едукативен проект** за практикување на основните функционалности кои се користат во MVC апликации, со посебен фокус на **CRUD операции**, работа со база на податоци и корисничка најава.
+The application serves as an **educational project** for practicing the basic functionalities used in MVC applications, with a special focus on **CRUD operations**, working with a database, and user login.
 
-Проектот е развиен за **факултетски и едукативни цели**, со цел подобро разбирање на начинот на функционирање на ASP.NET MVC апликациите.
+The project is developed for **faculty and educational purposes**, with the goal of better understanding how ASP.NET MVC applications function.
 
-## 🧱 Архитектура
+## 🧱 Architecture
 
-Апликацијата е изградена според **MVC (Model–View–Controller)** архитектонскиот модел:
+The application is built according to the **MVC (Model–View–Controller)** architectural pattern:
 
-- **Model** – модели и бизнис логика
-- **View** – кориснички интерфејс (Razor Views)
-- **Controller** – обработка на HTTP барања и логика
+- **Model** – models and business logic
+- **View** – user interface (Razor Views)
+- **Controller** – handling HTTP requests and logic
 
-Овој пристап овозможува јасна поделба на одговорности и полесно одржување на апликацијата.
+This approach enables clear separation of responsibilities and easier maintenance of the application.
 
-## ⚙️ Функционалности
+## ⚙️ Functionalities
 
-- CRUD операции (Create, Read, Update, Delete)
-- Работа со ентитети поврзани со вакцинација
-- Корисничка најава (Login)
-- Основна автентикација со вградени .NET механизми
-- Автоматско управување со кориснички сесии
+- CRUD operations (Create, Read, Update, Delete)
+- Working with entities related to vaccination
+- User login
+- Basic authentication using built-in .NET mechanisms
+- Automatic management of user sessions
 
-## 🔐 Автентикација
+## 🔐 Authentication
 
-Апликацијата користи **вградени .NET механизми за најава**, со што се овозможува:
-- кориснички login
-- контрола на пристап до одредени функционалности
-- основна заштита на податоците
+The application uses **built-in .NET login mechanisms**, which enable:
+- user login
+- access control to certain functionalities
+- basic data protection
 
-## 🗄 База на податоци
+## 🗄 Database
 
 - **Local Database**
-- Работа со локална база преку Entity Framework
-- Перзистирање и управување со податоци
+- Working with a local database via Entity Framework
+- Data persistence and management
 
-## 🛠 Користени технологии
+## 🛠 Technologies Used
 
 - C#
 - ASP.NET MVC
@@ -47,15 +47,15 @@
 - Razor Views
 - Local Database (LocalDB / SQLite)
 
-## 🎯 Цел на проектот
+## 🎯 Project Goal
 
-Целта на овој проект е:
-- Изучување на основите на **ASP.NET MVC**
-- Разбирање на CRUD операции во .NET
-- Работа со база на податоци
-- Основи на корисничка најава и автентикација
-- Подготовка за понатамошни и посложени .NET MVC проекти
+The goal of this project is:
+- Studying the fundamentals of **ASP.NET MVC**
+- Understanding CRUD operations in .NET
+- Working with a database
+- Basics of user login and authentication
+- Preparation for further and more complex .NET MVC projects
 
 ---
 
-📌 *Проектот е наменет за факултетски и едукативни цели и претставува основа за изучување на .NET MVC архитектурата.*
+📌 *The project is intended for faculty and educational purposes and represents a foundation for studying the .NET MVC architecture.*
